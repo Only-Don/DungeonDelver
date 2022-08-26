@@ -79,7 +79,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.purchasing": {
-      "version": "4.2.1",
+      "version": "4.3.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -94,7 +94,7 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.services.analytics": {
-      "version": "4.0.1",
+      "version": "4.1.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
