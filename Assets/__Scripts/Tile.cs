@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Tile类用于从TileCamera类获得一个整型数，以获知显示哪个图块。
+/// </summary>
 public class Tile : MonoBehaviour
 {
     [Header("Set Dynamically")]
@@ -16,12 +19,20 @@ public class Tile : MonoBehaviour
         bColl = GetComponent<BoxCollider>();
     }
 
+    /// <summary>
+    /// 该方法用来读取地砖(Tile)的图块数量，
+    /// 如果没有给<param name="eTileNum"></param>传递任何参数，
+    /// 则<param name="eTileNum"></param>将从TileCamera.GET_MAP()中读取默认图块数量。
+    /// </summary>
+    /// <param name="eX"></param>
+    /// <param name="eY"></param>
+    /// <param name="eTileNum"></param>
     public void SetTile( int eX, int eY, int eTileNum = -1)
     {
         x = eX;
         y = eY;
         transform.localPosition = new Vector3(x, y, 0);
-        gameObject.name = x.ToString("D3") + "x" + y.ToString("D3");
+        gameObject.name = x.ToString("D3") + "x" + y.ToString("D3");    //规定输出格式，D表示输出为十进制数，3表示至少使用3个字符。
 
         if(eTileNum == -1)
         {
@@ -32,7 +43,7 @@ public class Tile : MonoBehaviour
             TileCamera.SET_MAP(x, y, eTileNum);
         }
         tileNum = eTileNum;
-        GetComponent<SpriteRenderer>().sprite = TileCamera.SPRITES[tileNum];
+        GetComponent<SpriteRenderer>().sprite = TileCamera.SPRITES[tileNum];    //一旦TileCamera.SPRITES存在，则将为当前Tile分配适当的精灵(Sprite)。
 
         SetCollider();
     }

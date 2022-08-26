@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637969086080108195
-    m_Hash: 939397200
+      ticks: 637970969157492413
+    m_Hash: 2803879522
   m_LockFileStatus:
     m_FilePath: "D:/IDM\u4E0B\u8F7D/Dungeon-Delver-Project-Start/Dungeon Delver Project
       Start/Packages/packages-lock.json"
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637969086125857658
-    m_Hash: 3497826359
+      ticks: 637970969157492413
+    m_Hash: 1022931954
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3384,9 +3384,11 @@ m_ResolvedPackages:
     - 4.0.0
     - 4.0.1
     - 4.1.0
+    - 4.2.0
     compatible:
     - 4.0.1
     - 4.1.0
+    - 4.2.0
     verified: 4.0.1
   dependencies:
   - name: com.unity.ugui

@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{6F4E51E7-78F6-1F6A-7058-2A75BCFA13CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,13 +57,16 @@
     <Analyzer Include="D:\VS2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\__Scripts\Grapple.cs" />
     <Compile Include="Assets\__Scripts\ProtoTools\Utils.cs" />
     <Compile Include="Assets\__Scripts\InRoom.cs" />
+    <Compile Include="Assets\__Scripts\DamageEffect.cs" />
     <Compile Include="Assets\__Scripts\CamFollowDray.cs" />
     <Compile Include="Assets\__Scripts\Spiker.cs" />
     <Compile Include="Assets\__Scripts\Dray.cs" />
     <Compile Include="Assets\__Scripts\ProtoTools\PT_XMLReader.cs" />
     <Compile Include="Assets\__Scripts\Enemy.cs" />
+    <Compile Include="Assets\__Scripts\IKeyMaster.cs" />
     <Compile Include="Assets\__Scripts\Skeletos.cs" />
     <Compile Include="Assets\__Scripts\ProtoTools\FloatingScore.cs" />
     <Compile Include="Assets\__Scripts\Tile.cs" />
@@ -70,13 +74,10 @@
     <Compile Include="Assets\__Scripts\IFacingMover.cs" />
     <Compile Include="Assets\__Scripts\TileCamera.cs" />
     <Compile Include="Assets\__Scripts\GridMove.cs" />
-    <Compile Include="Assets\__Scripts\ProtoTools\Scoreboard.cs" />
-    <Compile Include="Assets\__Scripts\IKeyMaster.cs" />
     <Compile Include="Assets\__Scripts\GateKeeper.cs" />
-    <Compile Include="Assets\__Scripts\GuiPanel.cs" />
-    <Compile Include="Assets\__Scripts\DamageEffect.cs" />
+    <Compile Include="Assets\__Scripts\ProtoTools\Scoreboard.cs" />
     <Compile Include="Assets\__Scripts\PickUp.cs" />
-    <Compile Include="Assets\__Scripts\Grapple.cs" />
+    <Compile Include="Assets\__Scripts\GuiPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\DelverGrappleable.txt" />

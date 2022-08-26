@@ -10,21 +10,23 @@ public class TileSwap
     public GameObject   guaranteedItemDrop;
     public int          overrideTileNum = -1;
 }
-
+/// <summary>
+/// TileCamera类负责解析和存储DelverTiles.png图像中所有的Sprite并读取DelverData.txt，以确定这些图块的位置。
+/// </summary>
 public class TileCamera : MonoBehaviour
 {
-    static private int          W, H;
+    static private int          W, H; //地图的总长和总宽
     static private int[,]       MAP;
     static public Sprite[]      SPRITES;
     static public Transform     TILE_ANCHOR;
-    static public Tile[,]       TILES;
+    static public Tile[,]       TILES;//地砖数组
     static public string        COLLISIONS;
 
-    [Header("Set in Inspector")]
-    public TextAsset            mapData;
-    public Texture2D            mapTiles;
-    public TextAsset            mapCollisions;
-    public Tile                 tilePrefab;
+    [Header("Set in Inspector")]    //作为检查器属性输入
+    public TextAsset            mapData;        //地图原始数据
+    public Texture2D            mapTiles;       //地图原始图块
+    public TextAsset            mapCollisions;  //地图碰撞预设
+    public Tile                 tilePrefab;     //地图预设贴图
     public int                  defaultTileNum;
     public List<TileSwap>       tileSwaps;
 
@@ -39,16 +41,20 @@ public class TileCamera : MonoBehaviour
 
     public void LoadMap()
     {
+        //生成TILE_ANCHOR作为所有Tiles的父元素。
         GameObject go = new GameObject("TILE_ANCHOR");
         TILE_ANCHOR = go.transform;
+        //从mapTiles加载所有Sprite。
         SPRITES = Resources.LoadAll<Sprite>(mapTiles.name);
 
-        string[] lines = mapData.text.Split('\n');
+        //读取地图数据
+        string[] lines = mapData.text.Split('\n');  //地图数据将被\n来分割为多行
         H = lines.Length;
-        string[] tileNums = lines[0].Split(' ');
+        string[] tileNums = lines[0].Split(' ');    //地图数据第一行将被空格分割为一个个的地图块，同时完成对tileNum数组的构建
         W = tileNums.Length;
 
-        System.Globalization.NumberStyles hexNum;
+        System.Globalization.NumberStyles hexNum;   //确定数字字符串参数中允许的样式，方便之后的int.Parse转换
+        //由于该常量需要用众多字符拼写，故将其放在hexNum常量中。
         hexNum = System.Globalization.NumberStyles.HexNumber;
         MAP = new int[W, H];
         for(int j=0; j<H; j++)
@@ -72,6 +78,10 @@ public class TileCamera : MonoBehaviour
 
         ShowMap();
     }
+
+    /// <summary>
+    /// 一次生成整个地图的所有Tiles
+    /// </summary>
     void ShowMap()
     {
         TILES = new Tile[W, H];
@@ -82,7 +92,7 @@ public class TileCamera : MonoBehaviour
             {
                 if(MAP[i,j] != 0)
                 {
-                    Tile ti = Instantiate<Tile>(tilePrefab);
+                    Tile ti = Instantiate<Tile>(tilePrefab); //将tilePrefab作为Tile实例化（类似于克隆物体），并将其传递给局部变量ti。
                     ti.transform.SetParent(TILE_ANCHOR);
                     ti.SetTile(i, j);
                     TILES[i, j] = ti;
@@ -146,7 +156,7 @@ public class TileCamera : MonoBehaviour
     static public int GET_MAP(float x, float y)
     {
         int tX = Mathf.RoundToInt(x);
-        int tY = Mathf.RoundToInt(y - 0.25f);
+        int tY = Mathf.RoundToInt(y - 0.25f);   //此时可在图块外显示主角上半身，并且在该图块上主角仍然处于控制状态。
         return GET_MAP(tX, tY);
     }
     static public void SET_MAP(int x,int y,int tNum)
