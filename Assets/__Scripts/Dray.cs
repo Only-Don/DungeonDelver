@@ -309,4 +309,37 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         get { return numKeys; }
         set { numKeys = value; }
     }
+
+    public void TakeDamage(DamageEffect dEf, Vector3 Dpos)
+    {
+        if (invincible)
+            return;
+        if (dEf == null)
+            return;
+
+        health -= dEf.damage;
+        invincible = true;
+        invincibleDone = Time.time + invincibleDuration;
+
+        if (dEf.knockback)
+        {
+            Vector3 delta = transform.position - this.transform.position;
+            if (Mathf.Abs(delta.x) >= Mathf.Abs(delta.y))
+            {
+                delta.x = (delta.x > 0) ? 1 : -1;
+                delta.y = 0;
+            }
+            else
+            {
+                delta.x = 0;
+                delta.y = (delta.y > 0) ? 1 : -1;
+            }
+
+            knockbackVel = delta * knockbackSpeed;
+            rigid.velocity = knockbackVel;
+
+            mode = eMode.knockback;
+            knockbackDone = Time.time + knockbackDuration;
+        }
+    }
 }
