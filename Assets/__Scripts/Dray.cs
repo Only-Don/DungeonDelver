@@ -10,19 +10,19 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     }
 
     [Header("Set in Inspector")]
-    public float    speed = 5;
-    public float attackDuration = 0.25f;
+    public float    speed = 5;  //移动速度
+    public float attackDuration = 0.25f;    //攻击的持续秒数
     public float transitionDelay = 0.5f;
-    public float attackDelay = 0.5f;
+    public float attackDelay = 0.5f;    //攻击动作的间隔
     public int   maxHealth = 10;
     public float knockbackSpeed = 10;
     public float knockbackDuration = 0.25f;
     public float invincibleDuration = 0.5f;
 
     [Header("Set Dynamically")]
-    public int      dirHeld = -1;
-    public int      facing = 1;
-    public eMode    mode = eMode.idle;
+    public int      dirHeld = -1;   //当前按键指示方向
+    public int      facing = 1;     //Dray所面对的方向
+    public eMode    mode = eMode.idle;//默认为静止
     public int      numKeys = 0;
     public bool     invincible = false;
     public bool     hasGrappler = false;
@@ -64,8 +64,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     private void Awake()
     {
         sRend = GetComponent<SpriteRenderer>();
-        rigid = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody>(); //载入刚体
+        anim = GetComponent<Animator>();//载入动画
         inRm = GetComponent<InRoom>();
         health = maxHealth;
         lastSafeLoc = transform.position;
@@ -97,36 +97,36 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         for(int i=0; i<4; i++)
         {
             if (Input.GetKey(keys[i]))
-                dirHeld = i;
+                dirHeld = i;    //随着按键改变移动方向
         }
         
-        if(Input.GetKeyDown(KeyCode.J) && Time.time >= timeAtkNext)
+        if(Input.GetKeyDown(KeyCode.J) && Time.time >= timeAtkNext) //按住攻击键并且时间大于下一次可攻击时间时发动
         {
-            mode = eMode.attack;
+            mode = eMode.attack;//模式转为攻击模式
             timeAtkDone = Time.time + attackDuration;
             timeAtkNext = Time.time + attackDelay;
         }
 
-        if(Time.time >= timeAtkDone)
+        if(Time.time >= timeAtkDone)    //当时间大于攻击完成时间时恢复静止
         {
             mode = eMode.idle;
         }
 
-        if(mode != eMode.attack)
+        if(mode != eMode.attack)//若模式不为攻击模式，则开始选择正确模式
         {
             if(dirHeld == -1)
             {
-                mode = eMode.idle;
+                mode = eMode.idle;//默认模式静止
             }
             else
             {
-                facing = dirHeld;
+                facing = dirHeld;//将面对方向改为按键方向，进入移动模式
                 mode = eMode.move;
             }
         }
 
         Vector3 vel = Vector3.zero;
-        switch (mode)
+        switch (mode)   //分别为不同模式选择对应动画
         {
             case eMode.attack:
                 anim.CrossFade("Dray_Attack_" + facing, 0);
@@ -143,7 +143,7 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
                 break;
         }
 
-        rigid.velocity = vel * speed;
+        rigid.velocity = vel * speed;   //刚体运动速度矢量等于vel乘以速度（Vector3.right = (1,0,0)，以此类推）
     }
 
     void LateUpdate()
@@ -203,6 +203,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             return;
 
         health -= dEf.damage;
+        if (health <= 0)
+            Die();
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;
 
@@ -341,5 +343,10 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             mode = eMode.knockback;
             knockbackDone = Time.time + knockbackDuration;
         }
+    }
+    void Die()
+    {
+        Destroy(gameObject);
+        Application.Quit();
     }
 }

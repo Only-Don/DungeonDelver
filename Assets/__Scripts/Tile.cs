@@ -21,9 +21,8 @@ public class Tile : MonoBehaviour
 
     /// <summary>
     /// 该方法用来读取地砖(Tile)的图块数量，
-    /// 如果没有给<param name="eTileNum"></param>传递任何参数，
-    /// 则<param name="eTileNum"></param>将从TileCamera.GET_MAP()中读取默认图块数量。
-    /// </summary>
+    /// 如果没有给<paramref name="eTileNum"/>传递任何参数，
+    /// 则<paramref name="eTileNum"/>将从TileCamera.GET_MAP()中读取默认图块数量。
     /// <param name="eX"></param>
     /// <param name="eY"></param>
     /// <param name="eTileNum"></param>

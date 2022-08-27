@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spiker : Enemy
+public class Spiker : Enemy, IFacingMover
 {
 
     enum eMode { search, attack, retract };
@@ -11,6 +11,9 @@ public class Spiker : Enemy
     public float attackSpeed = 6;
     public float retractSpeed = 3;
     public float radius = 0.4f;
+
+    [Header("Set Dynamically")]
+    public int facing = 0;
 
     private eMode mode = eMode.search;
     private InRoom inRm;
@@ -35,13 +38,13 @@ public class Spiker : Enemy
         switch (mode)
         {
             case eMode.search:
-                // Check whether Dray is in the same room
+                // 查找Dray是否在该房间
                 if (dray.roomNum != inRm.roomNum) return;
 
                 float moveAmt;
                 if (Mathf.Abs(dray.roomPos.x - inRm.roomPos.x) < sensorRange)
                 {
-                    // Attack Vertically
+                    // 竖直方向攻击
                     moveAmt = dray.roomPos.y - inRm.roomPos.y;
                     p1 = p0 = transform.position;
                     p1.y += moveAmt;
@@ -50,7 +53,7 @@ public class Spiker : Enemy
 
                 if (Mathf.Abs(dray.roomPos.y - inRm.roomPos.y) < sensorRange)
                 {
-                    // Attack Horizontally
+                    // 水平方向攻击
                     moveAmt = dray.roomPos.x - inRm.roomPos.x;
                     p1 = p0 = transform.position;
                     p1.x += moveAmt;
@@ -99,8 +102,43 @@ public class Spiker : Enemy
                 }
                 transform.position = pos - delta;
                 break;
-
         }
     }
 
+    public int GetFacing()
+    {
+        return facing;
+    }
+
+    public bool moving
+    {
+        get { return true; }
+    }
+
+    public float GetSpeed()
+    {
+        return attackSpeed;
+    }
+
+    public float gridMult
+    {
+        get { return inRm.gridMult; }
+    }
+
+    public Vector2 roomPos
+    {
+        get { return inRm.roomPos; }
+        set { inRm.roomPos = value; }
+    }
+
+    public Vector2 roomNum
+    {
+        get { return inRm.roomNum; }
+        set { inRm.roomNum = value; }
+    }
+
+    public Vector2 GetRoomPosOnGrid(float mult = -1)
+    {
+        return inRm.GetRoomPosOnGrid(mult);
+    }
 }

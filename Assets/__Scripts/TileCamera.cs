@@ -16,8 +16,8 @@ public class TileSwap
 public class TileCamera : MonoBehaviour
 {
     static private int          W, H; //地图的总长和总宽
-    static private int[,]       MAP;
-    static public Sprite[]      SPRITES;
+    static private int[,]       MAP;//地图数组
+    static public Sprite[]      SPRITES;//精灵数组
     static public Transform     TILE_ANCHOR;
     static public Tile[,]       TILES;//地砖数组
     static public string        COLLISIONS;
@@ -36,6 +36,7 @@ public class TileCamera : MonoBehaviour
     private void Awake()
     {
         COLLISIONS = Utils.RemoveLineEndings(mapCollisions.text);
+        PrepareTileSwapDict();
         LoadMap();
     }
 
@@ -93,8 +94,8 @@ public class TileCamera : MonoBehaviour
                 if(MAP[i,j] != 0)
                 {
                     Tile ti = Instantiate<Tile>(tilePrefab); //将tilePrefab作为Tile实例化（类似于克隆物体），并将其传递给局部变量ti。
-                    ti.transform.SetParent(TILE_ANCHOR);
-                    ti.SetTile(i, j);
+                    ti.transform.SetParent(TILE_ANCHOR);//将TILE_ANCHOR作为ti的父对象。
+                    ti.SetTile(i, j);//进行贴图
                     TILES[i, j] = ti;
                 }
             }
@@ -110,7 +111,6 @@ public class TileCamera : MonoBehaviour
     }
     void CheckTileSwaps(int i, int j)
     {
-        PrepareTileSwapDict();
         int tNum = GET_MAP(i, j);
         if (!tileSwapDict.ContainsKey(tNum))
             return;
