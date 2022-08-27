@@ -63,7 +63,7 @@ public class TileCamera : MonoBehaviour
             tileNums = lines[j].Split(' ');
             for(int i=0; i<W; i++)
             {
-                if(tileNums[i] == "..")
+                if(tileNums[i] == ".." || tileNums[i] == "..¡¢\r")
                 {
                     MAP[i, j] = 0;
                 }
