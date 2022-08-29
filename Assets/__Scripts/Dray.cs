@@ -4,27 +4,16 @@ using UnityEngine;
 
 public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 {
-<<<<<<< HEAD
-    public enum eMode
-=======
     public enum eMode //动画的枚举，可以用来跟踪和查询Dray的状态
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     {
         idle, move, attack, transition, knockback
     }
 
-<<<<<<< HEAD
-    [Header("Set in Inspector")]
-    public float    speed = 5;  //移动速度
-    public float attackDuration = 0.25f;    //攻击的持续秒数
-    public float transitionDelay = 0.5f;
-=======
     //public变量可以直接在unity编辑器中的Inspector里编辑
     [Header("Set in Inspector")]
     public float    speed = 5;  //移动速度
     public float attackDuration = 0.25f;    //攻击的持续秒数
     public float transitionDelay = 0.5f;   
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     public float attackDelay = 0.5f;    //攻击动作的间隔
     public int   maxHealth = 10;
     public float knockbackSpeed = 10;
@@ -43,24 +32,14 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 
     [SerializeField]
     private int _health;
-
-<<<<<<< HEAD
-    public int health
-=======
     public int health  //创建主角的生命，可以在inspector里修改
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     {
         get { return _health; }
         set { _health = value; }
     }
 
-<<<<<<< HEAD
-    private float   timeAtkDone = 0;
-    private float   timeAtkNext = 0;
-=======
     private float   timeAtkDone = 0;     //攻击动画应该完成的时间
     private float   timeAtkNext = 0;     //Dray能够再次发起攻击的时间间隔
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     private float   transitionDone = 0;
     private Vector2 transitionPos;
     private float   knockbackDone = 0;
@@ -72,39 +51,23 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     private Animator anim;
     private InRoom inRm;
 
-<<<<<<< HEAD
-    private Vector3[] directions = new Vector3[]
-=======
     private Vector3[] directions = new Vector3[]  //产生一个新的向量数组，dirHeld的数值对应数组的不同元素，便于引用向量的不同方向
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     {
         Vector3.right, Vector3.up, Vector3.left, Vector3.down
     };
 
-<<<<<<< HEAD
-    private KeyCode[] keys = new KeyCode[]
-=======
     private KeyCode[] keys = new KeyCode[] //产生一个新的按键数组，和向量数组同理，用于轻松的引用每个方向键
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     {
         KeyCode.D, KeyCode.W, KeyCode.A, KeyCode.S
     };
 
     private void Awake()
     {
-<<<<<<< HEAD
-        sRend = GetComponent<SpriteRenderer>();
-        rigid = GetComponent<Rigidbody>(); //载入刚体
-        anim = GetComponent<Animator>();//载入动画
-        inRm = GetComponent<InRoom>();
-        health = maxHealth;
-=======
         sRend = GetComponent<SpriteRenderer>();  //载入渲染器
         rigid = GetComponent<Rigidbody>();       //载入刚体
         anim = GetComponent<Animator>();         //载入动画
         inRm = GetComponent<InRoom>();
         health = maxHealth;                      //出生时最大血量
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
         lastSafeLoc = transform.position;
         lastSafeFacing = facing;
     }
@@ -133,25 +96,15 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         dirHeld = -1;
         for(int i=0; i<4; i++)
         {
-<<<<<<< HEAD
-            if (Input.GetKey(keys[i]))
-=======
             if (Input.GetKey(keys[i]))  //使用的是前面的按键数组
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
                 dirHeld = i;    //随着按键改变移动方向
         }
         
         if(Input.GetKeyDown(KeyCode.J) && Time.time >= timeAtkNext) //按住攻击键并且时间大于下一次可攻击时间时发动
         {
-<<<<<<< HEAD
-            mode = eMode.attack;//模式转为攻击模式
-            timeAtkDone = Time.time + attackDuration;
-            timeAtkNext = Time.time + attackDelay;
-=======
             mode = eMode.attack;                       //模式转为攻击模式
             timeAtkDone = Time.time + attackDuration;  //设置何时停止攻击动画
             timeAtkNext = Time.time + attackDelay;     //设置何时能再次播放攻击动画
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
         }
 
         if(Time.time >= timeAtkDone)    //当时间大于攻击完成时间时恢复静止
@@ -159,11 +112,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             mode = eMode.idle;
         }
 
-<<<<<<< HEAD
-        if(mode != eMode.attack)//若模式不为攻击模式，则开始选择正确模式
-=======
+
         if(mode != eMode.attack)//若模式不为攻击模式，则根据是否按住移动键在idle和move之间进行选择
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
         {
             if(dirHeld == -1)
             {
@@ -171,27 +121,11 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             }
             else
             {
-<<<<<<< HEAD
-                facing = dirHeld;//将面对方向改为按键方向，进入移动模式
-=======
                 facing = dirHeld;//确保面对方向与移动方向一致
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
                 mode = eMode.move;
             }
         }
 
-<<<<<<< HEAD
-        Vector3 vel = Vector3.zero;
-        switch (mode)   //分别为不同模式选择对应动画
-        {
-            case eMode.attack:
-                anim.CrossFade("Dray_Attack_" + facing, 0);
-                anim.speed = 0;
-                break;
-            case eMode.idle:
-                anim.CrossFade("Dray_Walk_" + facing, 0);
-                anim.speed = 0;
-=======
         //执行mode选择的模式，播放正确动画
         Vector3 vel = Vector3.zero;
         switch (mode) 
@@ -203,16 +137,11 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             case eMode.idle:
                 anim.CrossFade("Dray_Walk_" + facing, 0);
                 anim.speed = 0; //待机时动画静止，并且面朝方向不变
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
                 break;
             case eMode.move:
                 vel = directions[dirHeld];
                 anim.CrossFade("Dray_Walk_" + facing, 0);
-<<<<<<< HEAD
-                anim.speed = 1;
-=======
                 anim.speed = 1; //以1帧的速度播放
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
                 break;
         }
 
@@ -303,15 +232,6 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         }
     }
 
-<<<<<<< HEAD
-    void OnTriggerEnter(Collider colld)
-    {
-        PickUp pup = colld.GetComponent<PickUp>();
-        if (pup == null)
-            return;
-
-        switch(pup.itemType)
-=======
     //PickUp脚本相关
     void OnTriggerEnter(Collider colld)
     {
@@ -320,7 +240,6 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
             return;
 
         switch(pup.itemType)  //根据拾取道具类型获得不同效果
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
         {
             case PickUp.eType.health:
                 health = Mathf.Min(health + 2, maxHealth);
@@ -333,11 +252,7 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
                 break;
         }
 
-<<<<<<< HEAD
-        Destroy(colld.gameObject);
-=======
         Destroy(colld.gameObject);  //拾取后摧毁道具
->>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     }
 
     public void ResetInRoom(int healthLoss = 0)

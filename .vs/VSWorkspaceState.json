@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\Assets\\__Scripts"
   ],
+  "SelectedNode": "\\Assets\\__Scripts\\PickUp.cs",
   "PreviewInSolutionExplorer": false
 }
