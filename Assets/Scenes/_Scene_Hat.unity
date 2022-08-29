@@ -134,6 +134,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: DelverPanel
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 1000013282365372, guid: ef2195d4d1bab4df9ad6dc73b0faebb1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     - target: {fileID: 224000010121386780, guid: ef2195d4d1bab4df9ad6dc73b0faebb1,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -402,6 +409,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grappler
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 1000010192216986, guid: 2ad8dfa20cd58468ca3481e0c8844a75, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> 090f8310ff024ce044089efec6eb7aa71aa16990
     - target: {fileID: 4000013991796272, guid: 2ad8dfa20cd58468ca3481e0c8844a75, type: 3}
       propertyPath: m_RootOrder
       value: 1
