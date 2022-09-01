@@ -47,7 +47,7 @@ public class Tile : MonoBehaviour
         SetCollider();
     }
 
-    void SetCollider()
+    void SetCollider()//·ÖÅäÅö×²Æ÷
     {
         bColl.enabled = true;
         char c = TileCamera.COLLISIONS[tileNum];

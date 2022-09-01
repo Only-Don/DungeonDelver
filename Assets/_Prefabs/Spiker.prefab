@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1826360748342553787}
   - component: {fileID: 1054442494203639108}
   - component: {fileID: -8601434157381919186}
+  - component: {fileID: 208697605045628488}
   m_Layer: 11
   m_Name: Spiker
   m_TagString: Untagged
@@ -144,6 +145,8 @@ MonoBehaviour:
   attackSpeed: 6
   retractSpeed: 3
   radius: 0.4
+  facing: 0
+  mode: 0
 --- !u!114 &1826360748342553787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,3 +195,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &208697605045628488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010950105738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a902d69e7c0bd247a753365be9273c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

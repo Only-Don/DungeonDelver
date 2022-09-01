@@ -13,7 +13,7 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     [Header("Set in Inspector")]
     public float    speed = 5;  //移动速度
     public float attackDuration = 0.25f;    //攻击的持续秒数
-    public float transitionDelay = 0.5f;   
+    public float transitionDelay = 0.5f;   //房间转换间隔
     public float attackDelay = 0.5f;    //攻击动作的间隔
     public int   maxHealth = 10;
     public float knockbackSpeed = 10;
@@ -204,9 +204,9 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         if (dEf == null)
             return;
 
-        health -= dEf.damage;
         if (health <= 0)
             Die();
+        health -= dEf.damage;
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;
 
@@ -322,6 +322,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         if (dEf == null)
             return;
 
+        if (health <= 0)
+            Die();
         health -= dEf.damage;
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;

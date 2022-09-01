@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class TileSwap
 {
-    public int          tileNum;
-    public GameObject   swapPrefab;
+    public int          tileNum;    //要替换的特殊图块的编号
+    public GameObject   swapPrefab; //交换的预设
     public GameObject   guaranteedItemDrop;
-    public int          overrideTileNum = -1;
+    public int          overrideTileNum = -1;//替换的默认值
 }
 /// <summary>
 /// TileCamera类负责解析和存储DelverTiles.png图像中所有的Sprite并读取DelverData.txt，以确定这些图块的位置。
@@ -20,29 +20,29 @@ public class TileCamera : MonoBehaviour
     static public Sprite[]      SPRITES;//精灵数组
     static public Transform     TILE_ANCHOR;
     static public Tile[,]       TILES;//地砖数组
-    static public string        COLLISIONS;
+    static public string        COLLISIONS;//记录碰撞数据的字符串
 
     [Header("Set in Inspector")]    //作为检查器属性输入
     public TextAsset            mapData;        //地图原始数据
     public Texture2D            mapTiles;       //地图原始图块
     public TextAsset            mapCollisions;  //地图碰撞预设
     public Tile                 tilePrefab;     //地图预设贴图
-    public int                  defaultTileNum;
-    public List<TileSwap>       tileSwaps;
+    public int                  defaultTileNum; //需要交换的地图块编号
+    public List<TileSwap>       tileSwaps;      //可序列化的列表
 
-    private Dictionary<int, TileSwap> tileSwapDict;
+    private Dictionary<int, TileSwap> tileSwapDict;//方便搜索的字典
     private Transform enemyAnchor, itemAnchor;
 
     private void Awake()
     {
-        COLLISIONS = Utils.RemoveLineEndings(mapCollisions.text);
-        PrepareTileSwapDict();
+        COLLISIONS = Utils.RemoveLineEndings(mapCollisions.text); //利用Util方法处理并记录数据
+        PrepareTileSwapDict();//迭代列表中的条目，并添加到字典
         LoadMap();
     }
 
     public void LoadMap()
     {
-        //生成TILE_ANCHOR作为所有Tiles的父元素。
+        //生成TILE_ANCHOR作为所有Tiles的父元素。同时TILE＿ANCHOR也有锚点的作用。
         GameObject go = new GameObject("TILE_ANCHOR");
         TILE_ANCHOR = go.transform;
         //从mapTiles加载所有Sprite。

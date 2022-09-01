@@ -13,12 +13,15 @@ public class GridMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!mover.moving) return;
+        if (!mover.moving) return;//如果不移动，不做任何动作
         int facing = mover.GetFacing();
 
+        //如果在一个方向移动，分配到网格
+        //首先获取网格位置
         Vector2 rPos = mover.roomPos;
         Vector2 rPosGrid = mover.GetRoomPosOnGrid();
 
+        //移动到网格行
         float delta = 0;
         if(facing == 0 || facing == 2)
         {

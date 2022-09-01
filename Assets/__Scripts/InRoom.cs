@@ -8,10 +8,11 @@ public class InRoom : MonoBehaviour
     static public float ROOM_H = 11;
     static public float WALL_T = 2;
 
+    //地图最大边界
     static public int MAX_RM_X = 9;
     static public int MAX_RM_Y = 9;
 
-    static public Vector2[] DOORS = new Vector2[]
+    static public Vector2[] DOORS = new Vector2[]//门的位置
     {
         new Vector2(14, 5),
         new Vector2(7.5f, 9),
@@ -25,7 +26,7 @@ public class InRoom : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(keepInRoom)
+        if(keepInRoom)//如果需要保持在房间内，则每一帧结束都会检查是否在房内
         {
             Vector2 rPos = roomPos;
             rPos.x = Mathf.Clamp(rPos.x, WALL_T, ROOM_W - 1 - WALL_T);
@@ -33,6 +34,8 @@ public class InRoom : MonoBehaviour
             roomPos = rPos;
         }
     }
+
+    //角色在当前房间里的坐标位置
 
     public Vector2 roomPos
     {
@@ -53,6 +56,7 @@ public class InRoom : MonoBehaviour
         }
     }
 
+    //角色在哪个房间
     public Vector2 roomNum
     {
         get
@@ -72,6 +76,7 @@ public class InRoom : MonoBehaviour
         }
     }
 
+    //计算离角色最近的网格位置
     public Vector2 GetRoomPosOnGrid(float mult = -1)
     {
         if(mult == -1)

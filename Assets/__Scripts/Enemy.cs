@@ -54,13 +54,16 @@ public class Enemy : MonoBehaviour
         knockback = false;//受伤害时调用的函数
     }
 
-    private void OnTriggerEnter(Collider colld)
+    public virtual void OnTriggerEnter(Collider colld)
     {
         if (invincible)
             return;//如果无敌，不运行该函数
         DamageEffect dEf = colld.gameObject.GetComponent<DamageEffect>();
         if (dEf == null)
             return;//如果没有伤害值（比如墙体碰撞），不运行该函数
+        Enemy e = colld.gameObject.GetComponent<Enemy>();
+        if (e != null)
+            return;
 
         health -= dEf.damage;
         if (health <= 0)
