@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 {
@@ -19,6 +20,7 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     public float knockbackSpeed = 10;
     public float knockbackDuration = 0.25f;
     public float invincibleDuration = 0.5f;
+    public float resetDelay = 0.5f;
 
     [Header("Set Dynamically")]
     public int      dirHeld = -1;   //当前按键指示方向
@@ -198,15 +200,26 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 
     void OnCollisionEnter(Collision coll)
     {
+        Tile ti = coll.gameObject.GetComponent<Tile>();
+        Collider col = coll.gameObject.GetComponent<Collider>();
+        if (ti != null && col != null)
+        {
+            if (ti.tileNum == 96)
+            {
+                col.enabled = false;
+                ResetInRoom(1);//若能延迟执行更好
+                col.enabled = true;
+            }
+        }
         if (invincible)
             return;
         DamageEffect dEf = coll.gameObject.GetComponent<DamageEffect>();
         if (dEf == null)
             return;
 
+        health -= dEf.damage;
         if (health <= 0)
             Die();
-        health -= dEf.damage;
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;
 
@@ -261,6 +274,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         facing = lastSafeFacing;
 
         health -= healthLoss;
+        if (health <= 0)
+            Die();
 
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;
@@ -322,9 +337,9 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         if (dEf == null)
             return;
 
+        health -= dEf.damage;
         if (health <= 0)
             Die();
-        health -= dEf.damage;
         invincible = true;
         invincibleDone = Time.time + invincibleDuration;
 
@@ -351,7 +366,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     }
     void Die()
     {
-        Destroy(gameObject);
-        Application.Quit();
+        //Destroy(gameObject);
+        SceneManager.LoadScene(2);
+        print("OK");
     }
 }
