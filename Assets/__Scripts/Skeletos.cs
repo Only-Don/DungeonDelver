@@ -32,6 +32,13 @@ public class Skeletos : Enemy, IFacingMover
         rigid.velocity = directions[facing] * speed;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        int lastFacing = facing;
+        while(facing == lastFacing)
+            DecideDirection();
+    }
+
     void DecideDirection()//骷髅随机方向
     {
         facing = Random.Range(0, 4);//0123中随机的方向
