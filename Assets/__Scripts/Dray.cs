@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 {
+    
     public enum eMode //动画的枚举，可以用来跟踪和查询Dray的状态
     {
         idle, move, attack, transition, knockback
@@ -32,8 +33,16 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
     public Vector3  lastSafeLoc;
     public int      lastSafeFacing;
 
+    //结局相关
+    public GameObject Ender;
+    public Time CloseTime;
+    public float timeClose = 0;
+    public bool timer = false;
+
     [SerializeField]
     private int _health;
+    private int isEnd;
+    
     public int health  //创建主角的生命，可以在inspector里修改
     {
         get { return _health; }
@@ -65,6 +74,8 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
 
     private void Awake()
     {
+        timer = false;
+        isEnd = 0;
         sRend = GetComponent<SpriteRenderer>();  //载入渲染器
         rigid = GetComponent<Rigidbody>();       //载入刚体
         anim = GetComponent<Animator>();         //载入动画
@@ -72,9 +83,27 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         health = maxHealth;                      //出生时最大血量
         lastSafeLoc = transform.position;
         lastSafeFacing = facing;
+        Ender.SetActive(false);
     }
     private void Update()
     {
+        //计时器用来判断结束画面何时消失
+        if (timer)
+        {
+            if (Time.time >= timeClose)
+            {
+                timer = false;
+                Ender.SetActive(false);
+                Time.timeScale = 1.0f;
+            }
+        }
+        //判断已经捡到的钥匙数量，来确定是否看到标题界面
+        if (isEnd == 5)
+        {
+            isEnd++;
+            GoEnd();
+        }
+        
         if (invincible && Time.time > invincibleDone)
             invincible = false;
         sRend.color = invincible ? Color.red : Color.white;
@@ -259,6 +288,7 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
                 break;
             case PickUp.eType.key:
                 keyCount++;
+                isEnd++;
                 break;
             case PickUp.eType.grappler:
                 hasGrappler = true;
@@ -266,6 +296,15 @@ public class Dray : MonoBehaviour, IFacingMover, IKeyMaster
         }
 
         Destroy(colld.gameObject);  //拾取后摧毁道具
+    }
+
+    //结局的函数GoEnd
+    public void GoEnd()
+    {
+        timeClose = Time.time + 0.01f;
+        Ender.SetActive(true);
+        timer = true;
+        Time.timeScale = 0.001f;
     }
 
     public void ResetInRoom(int healthLoss = 0)

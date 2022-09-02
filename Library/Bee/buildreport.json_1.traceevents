@@ -1,0 +1,615 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1662136975372520, "dur": 1120405, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136975372806, "dur": 8125, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136975380933, "dur": 62436, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136975443403, "dur": 421871, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136975865276, "dur": 617287, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136976482564, "dur": 10361, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136976494503, "dur": 12, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1662136975573273, "dur": 269625, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975574369, "dur": 51224, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975823978, "dur": 5702, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975829683, "dur": 13207, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975830441, "dur": 11021, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975848097, "dur": 1403, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1662136975847297, "dur": 2226, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136976494855, "dur": 776, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1662136975931161, "dur":3062, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136975934234, "dur":86, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1662136975934357, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1662136975934378, "dur":652, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1662136975935064, "dur":764, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136975935828, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976447804, "dur":220, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448024, "dur":131, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448155, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448160, "dur":26, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448186, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448190, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448202, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448204, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448211, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448213, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448219, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448221, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448227, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448229, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448234, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448236, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448242, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448244, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448251, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448253, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448259, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448260, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448267, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448269, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448275, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448277, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448284, "dur":34, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448318, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448324, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448326, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448332, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448334, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448341, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448347, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976448364, "dur":2940, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1662136975935283, "dur":552, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975935837, "dur":8301, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975944152, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1662136975944153, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975944184, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1662136975944229, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975946209, "dur":4451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1662136975950662, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1662136975950685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975951350, "dur":2457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1662136975953830, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start.exe" }}
+,{ "pid":12345, "tid":1, "ts":1662136975953853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136975953859, "dur":51813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start.exe" }}
+,{ "pid":12345, "tid":1, "ts":1662136976005698, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976005742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976005751, "dur":53063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976058828, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976058843, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976058848, "dur":31675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976090536, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976090554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976090560, "dur":47539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976138112, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976138127, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976138132, "dur":35450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976173594, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976173607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976173613, "dur":45938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976219565, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976219945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976219952, "dur":42371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976262336, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976262350, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976262356, "dur":80384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1662136976342762, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1662136976342787, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976342812, "dur":66144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1662136976408971, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1662136976408991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1662136976408996, "dur":37662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1662136976446669, "dur":1146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136975935315, "dur":525, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136975935840, "dur":8394, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136975944235, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1662136975944278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136975962197, "dur":43492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1662136976005714, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976005744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976005753, "dur":49822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976055591, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976055605, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976055611, "dur":50510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976106137, "dur":415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.WinRTStub.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976106555, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976106562, "dur":34195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.WinRTStub.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976140769, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976140788, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976140794, "dur":34271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976175077, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976175092, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976175098, "dur":46149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976221260, "dur":335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976221626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976221633, "dur":38593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976260240, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976260253, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976260259, "dur":31811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976292082, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Purchasing.Common.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976292428, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976292434, "dur":97489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Purchasing.Common.dll" }}
+,{ "pid":12345, "tid":2, "ts":1662136976389939, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1662136976389955, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1662136976389961, "dur":54093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1662136976444066, "dur":3736, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136975935347, "dur":499, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136975935846, "dur":8377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136975944225, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1662136975944274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136975961320, "dur":44418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1662136976005758, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976005842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976005852, "dur":54492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976060358, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976060376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976060382, "dur":28557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976088953, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976088998, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976089005, "dur":46013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976135030, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976135045, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976135051, "dur":36966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976172032, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976172051, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976172056, "dur":31250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976203318, "dur":446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976203767, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976203772, "dur":47417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976251203, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976251217, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976251223, "dur":35917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976287153, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976287194, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976287200, "dur":69544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1662136976356759, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1662136976356773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1662136976356806, "dur":87387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1662136976444208, "dur":3599, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136975935376, "dur":475, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136975935852, "dur":8364, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136975944218, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1662136975944247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136975953298, "dur":10022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1662136975963342, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136975963370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136975963394, "dur":82607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976046016, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976046030, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976046036, "dur":35508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976081558, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976081575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976081581, "dur":50204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976131797, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976131839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976131845, "dur":33113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976164978, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976164996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976165006, "dur":36825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976201843, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976201862, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976201895, "dur":46873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976248781, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Analytics.DataPrivacy.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976249101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976249107, "dur":34049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Analytics.DataPrivacy.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976283168, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976283182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976283188, "dur":65188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1662136976348389, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1662136976348406, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1662136976348411, "dur":95224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1662136976443647, "dur":4156, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136975935406, "dur":451, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136975935857, "dur":8371, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136975944231, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1662136975944267, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136975960387, "dur":45455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1662136976005867, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976005901, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976005909, "dur":57710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976063632, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976063647, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976063653, "dur":45604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976109269, "dur":450, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.Stores.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976109747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976109754, "dur":33693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.Stores.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976143459, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976143473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976143479, "dur":36518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976180010, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976180078, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976180084, "dur":44578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976224675, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976225038, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976225044, "dur":46648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976271705, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976271723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976271729, "dur":58390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976330132, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976330489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976330495, "dur":83436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1662136976413944, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1662136976413957, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1662136976413962, "dur":33402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1662136976447382, "dur":436, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136975935428, "dur":433, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136975935862, "dur":8339, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136975944203, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1662136975944252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136975957727, "dur":48146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1662136976005895, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976005962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976005986, "dur":59285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976065285, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976065299, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976065332, "dur":45825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976111170, "dur":332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.SecurityStub.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976111505, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976111511, "dur":34712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.SecurityStub.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976146236, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976146249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976146280, "dur":35912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976182205, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AutoStreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976182224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976182230, "dur":47882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AutoStreamingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976230125, "dur":374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976230502, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976230509, "dur":37123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976267645, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976267660, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976267666, "dur":53323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976321004, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976321028, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976321035, "dur":91154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1662136976412206, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1662136976412228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1662136976412233, "dur":34966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1662136976447210, "dur":609, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136975935451, "dur":414, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136975935866, "dur":8325, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136975944196, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1662136975944248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136975956665, "dur":49059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1662136976005746, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976005770, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976005778, "dur":51420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976057211, "dur":538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976057752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976057758, "dur":48371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976106146, "dur":451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.WinRTCore.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976106600, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976106608, "dur":32822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.WinRTCore.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976139444, "dur":333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Monetization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976139780, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976139786, "dur":42678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Monetization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976182478, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976182492, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976182497, "dur":51408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976233920, "dur":325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976234248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976234254, "dur":34782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976269051, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976269066, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976269072, "dur":58653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976327740, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976327759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976327765, "dur":97723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1662136976425500, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1662136976425513, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1662136976425518, "dur":21854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1662136976447392, "dur":424, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136975935471, "dur":399, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136975935870, "dur":8328, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136975944200, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1662136975944253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136975959103, "dur":46675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1662136976005803, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976005848, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976005857, "dur":57743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976063614, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976063633, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976063638, "dur":49245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976112896, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.SecurityCore.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976113226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976113232, "dur":31560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.SecurityCore.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976144805, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976144818, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976144823, "dur":33496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976178331, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976178347, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976178353, "dur":44431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976222797, "dur":330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976223130, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976223136, "dur":39097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976262245, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976262260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976262266, "dur":63028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976325311, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976325327, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976325334, "dur":117025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1662136976442375, "dur":352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1662136976442730, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1662136976442736, "dur":5028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1662136976447776, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":8, "ts":1662136976447777, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975935503, "dur":370, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975935873, "dur":8312, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975944188, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1662136975944240, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975949142, "dur":1905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1662136975951065, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1662136975951090, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975951098, "dur":2684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1662136975953806, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":9, "ts":1662136975953837, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136975953844, "dur":51820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":9, "ts":1662136976005690, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976005722, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976005730, "dur":47714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976053459, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976053477, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976053484, "dur":35475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976088973, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976089001, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976089007, "dur":47526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976136545, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976136559, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976136565, "dur":33948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976170528, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976170542, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976170548, "dur":36615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976207176, "dur":324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976207503, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976207509, "dur":45043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976252564, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976252579, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976252585, "dur":61386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976313986, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976314001, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976314007, "dur":108028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":9, "ts":1662136976422049, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1662136976422062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1662136976422068, "dur":25212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1662136976447298, "dur":516, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975935533, "dur":344, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975935877, "dur":8301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975944181, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1662136975944237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975949687, "dur":2284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1662136975951993, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136975952019, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975952612, "dur":41313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136975993942, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136975993962, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136975993968, "dur":55701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976049683, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976049697, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976049702, "dur":35723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976085439, "dur":361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpatialTracking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976085803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976085809, "dur":47540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpatialTracking.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976133362, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976133376, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976133381, "dur":34426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976167820, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976167842, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976167848, "dur":37767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976205630, "dur":653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976206285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976206291, "dur":52414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976258718, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976258762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976258768, "dur":29909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976288690, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976288704, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976288710, "dur":84601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":10, "ts":1662136976373325, "dur":360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":10, "ts":1662136976373688, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1662136976373693, "dur":70198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":10, "ts":1662136976443903, "dur":3906, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136975935558, "dur":323, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136975935882, "dur":8292, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136975944177, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1662136975944246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136975953507, "dur":52499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1662136976006027, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976006051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976006059, "dur":60782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976066855, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976066874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976066880, "dur":47647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976114540, "dur":353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976114896, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976114902, "dur":33630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976148545, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976148559, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976148565, "dur":42109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976190685, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976190701, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976190706, "dur":47976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976238697, "dur":364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976239064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976239070, "dur":39196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976278280, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976278301, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976278333, "dur":75916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1662136976354264, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":11, "ts":1662136976354277, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1662136976354283, "dur":89536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":11, "ts":1662136976443836, "dur":3970, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136975935580, "dur":306, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136975935886, "dur":8281, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136975944170, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1662136975944242, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136975951126, "dur":2728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1662136975953876, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1662136975953919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136975954862, "dur":51166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1662136976006050, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976006073, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976006081, "dur":64287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976070383, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976070399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976070405, "dur":52592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976123012, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleStub.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976123338, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976123344, "dur":30316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleStub.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976153675, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976153689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976153696, "dur":34046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976187755, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976187774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976187780, "dur":44054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976231848, "dur":319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976232170, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976232176, "dur":38211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976270405, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976270420, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976270425, "dur":61259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1662136976331697, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":12, "ts":1662136976332017, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976332702, "dur":10786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":12, "ts":1662136976343506, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":12, "ts":1662136976343527, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1662136976343533, "dur":99482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":12, "ts":1662136976443034, "dur":4765, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136975935612, "dur":279, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136975935891, "dur":8279, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136975944171, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":13, "ts":1662136975944240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136975950107, "dur":2573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":13, "ts":1662136975952703, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136975952730, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136975952741, "dur":87814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976040574, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976040591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976040598, "dur":35085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976075696, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976075710, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976075716, "dur":48803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976124536, "dur":331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976124870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976124876, "dur":33518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleMacosStub.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976158409, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976158425, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976158431, "dur":40032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976198477, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976198490, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976198496, "dur":46896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976245407, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976245746, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976245778, "dur":38756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976284547, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976284563, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976284568, "dur":83615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":13, "ts":1662136976368197, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":13, "ts":1662136976368213, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1662136976368219, "dur":75968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":13, "ts":1662136976444204, "dur":3607, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975935633, "dur":262, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975935895, "dur":8266, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975944164, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1662136975944238, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975949120, "dur":2113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1662136975951251, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":14, "ts":1662136975951276, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975951284, "dur":3122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":14, "ts":1662136975954429, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136975954454, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136975955463, "dur":54796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976010275, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976010295, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976010301, "dur":58084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976068400, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976068414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976068420, "dur":48931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976117364, "dur":370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.Codeless.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976117738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976117744, "dur":37379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.Codeless.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976155135, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976155149, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976155155, "dur":37120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976192291, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976192304, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976192310, "dur":44364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976236686, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976237015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976237021, "dur":36507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976273541, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976273555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976273561, "dur":73153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":14, "ts":1662136976346728, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":14, "ts":1662136976346744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1662136976346751, "dur":96559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":14, "ts":1662136976443322, "dur":4478, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136975935659, "dur":240, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136975935899, "dur":8256, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136975944157, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1662136975944247, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136975966039, "dur":74546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1662136976040608, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976040632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976040638, "dur":36832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976077484, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976077501, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976077506, "dur":48530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976126048, "dur":328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleCore.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976126379, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976126385, "dur":30110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Purchasing.AppleCore.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976156508, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976156526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976156532, "dur":37541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976194086, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976194101, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976194107, "dur":49426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976243546, "dur":349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976243898, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976243905, "dur":35825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976279744, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976279758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976279765, "dur":129086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":15, "ts":1662136976408867, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1662136976408885, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1662136976408928, "dur":37663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1662136976446603, "dur":1210, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975935681, "dur":222, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975935903, "dur":8247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975944152, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":16, "ts":1662136975944239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975949431, "dur":2071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":16, "ts":1662136975951515, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136975951535, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975952305, "dur":10989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136975963319, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136975963939, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136975963948, "dur":83548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976047509, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976047529, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976047561, "dur":31396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976078969, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976078988, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976078994, "dur":48995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976128002, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976128021, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976128027, "dur":34272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976162311, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976162323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976162329, "dur":37851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976200193, "dur":363, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Advertisements.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976200559, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976200565, "dur":46592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/UnityEngine.Advertisements.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976247169, "dur":380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Analytics.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976247552, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976247557, "dur":34268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/Unity.Services.Analytics.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976281837, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976281857, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976281862, "dur":108054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":16, "ts":1662136976389930, "dur":396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":16, "ts":1662136976390329, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1662136976390338, "dur":53585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D://2022//DungeonDelver Final/Dungeon Delver Project Start_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":16, "ts":1662136976443935, "dur":3869, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1662136976453968, "dur":2686, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1662136976495912, "dur": 1651, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1662136976494492, "dur": 3097, "ph": "X", "name": "Write chrome-trace events", "args": {} },
